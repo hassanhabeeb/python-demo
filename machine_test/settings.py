@@ -335,28 +335,28 @@ APPEND_SLASH = False
 
 
 
-from ssm_loader import get_ssm_param
+#from ssm_loader import get_ssm_param
 
 
-SECRET_KEY = get_ssm_param("/machine-test/SECRET_KEY")
-DEBUG = get_ssm_param("/machine-test/DEBUG", default="False") == "True"
+#SECRET_KEY = get_ssm_param("/machine-test/SECRET_KEY")
+#DEBUG = get_ssm_param("/machine-test/DEBUG", default="False") == "True"
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': get_ssm_param('/machine-test/DATABASE_NAME'),
-        'USER': get_ssm_param('/machine-test/DATABASE_USER'),
-        'PASSWORD': get_ssm_param('/machine-test/DATABASE_PASSWORD'),
-        'HOST': get_ssm_param('/machine-test/DATABASE_HOST'),
-        'PORT': get_ssm_param('/machine-test/DATABASE_PORT'),
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': get_ssm_param('/machine-test/DATABASE_NAME'),
+#        'USER': get_ssm_param('/machine-test/DATABASE_USER'),
+#        'PASSWORD': get_ssm_param('/machine-test/DATABASE_PASSWORD'),
+#        'HOST': get_ssm_param('/machine-test/DATABASE_HOST'),
+#        'PORT': get_ssm_param('/machine-test/DATABASE_PORT'),
+#    }
+#}
 
-ALLOWED_HOSTS = get_ssm_param('/machine-test/ALLOWED_HOSTS', default='127.0.0.1').split(',')
-CSRF_TRUSTED_ORIGINS = get_ssm_param('/machine-test/CSRF_TRUSTED_ORIGINS', default='').split(',')
-CORS_ALLOWED_ORIGINS = get_ssm_param('/machine-test/CORS_ALLOWED_ORIGINS', default='').split(',')
-SWAGGER_DEFAULT_API_URL = get_ssm_param('/machine-test/SWAGGER_DEFAULT_API_URL')
-SECURE_CROSS_ORIGIN_OPENER_POLICY = None  # or simply don't set it
+#ALLOWED_HOSTS = get_ssm_param('/machine-test/ALLOWED_HOSTS', default='127.0.0.1').split(',')
+#CSRF_TRUSTED_ORIGINS = get_ssm_param('/machine-test/CSRF_TRUSTED_ORIGINS', default='').split(',')
+#CORS_ALLOWED_ORIGINS = get_ssm_param('/machine-test/CORS_ALLOWED_ORIGINS', default='').split(',')
+#SWAGGER_DEFAULT_API_URL = get_ssm_param('/machine-test/SWAGGER_DEFAULT_API_URL')
+#SECURE_CROSS_ORIGIN_OPENER_POLICY = None  # or simply don't set it
 
 
 

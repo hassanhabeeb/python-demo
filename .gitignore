@@ -1,0 +1,14 @@
+venv
+.env
+*.pyc
+debug.log
+/assets
+/logs
+*/*/migrations/*.py
+!*/*/migrations/__init__.py
+/media
+.idea
+/.vscode
+admin_generator.txt
+.scannerwork
+.history
