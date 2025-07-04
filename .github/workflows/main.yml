@@ -1,0 +1,39 @@
+name: Build & Deploy Django via Docker Compose
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Archive project files
+      run: tar czf project.tar.gz .
+
+    - name: Upload to EC2
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        source: "project.tar.gz"
+        target: "~/"
+
+    - name: Deploy on EC2
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          rm -rf ~/ticketing-system
+          mkdir ~/ticketing-system
+          tar -xzf ~/project.tar.gz -C ~/ticketing-system
+          cd ~/ticketing-system
+          docker-compose down || true
+          docker-compose up --build -d
