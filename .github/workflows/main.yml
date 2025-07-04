@@ -9,25 +9,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout Code
       uses: actions/checkout@v4
 
-    - name: Archive code (exclude .git)
+    - name: Archive Code (Exclude .git and archive itself)
       run: |
         mkdir temp_project
-        rsync -av --progress ./ temp_project/ --exclude temp_project --exclude .git
+        rsync -av --exclude='.git' --exclude='temp_project' ./ temp_project/
         tar -czf project.tar.gz -C temp_project .
+        rm -rf temp_project
 
-    - name: Upload archive to EC2
+    - name: Upload to EC2 via SCP
       uses: appleboy/scp-action@v0.1.4
       with:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
         source: "project.tar.gz"
-        target: "~/"
+        target: "~"
 
-    - name: Deploy using SSH
+    - name: Deploy on EC2 via SSH
       uses: appleboy/ssh-action@v1.0.3
       with:
         host: ${{ secrets.EC2_HOST }}
