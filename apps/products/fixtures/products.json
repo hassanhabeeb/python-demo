@@ -1,0 +1,1302 @@
+[
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "Product 1",
+      "description": "Description for product 1",
+      "price": "10.75",
+      "stock": 5,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "Product 2",
+      "description": "Description for product 2",
+      "price": "11.5",
+      "stock": 10,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Product 3",
+      "description": "Description for product 3",
+      "price": "12.25",
+      "stock": 15,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "Product 4",
+      "description": "Description for product 4",
+      "price": "13.0",
+      "stock": 20,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "name": "Product 5",
+      "description": "Description for product 5",
+      "price": "13.75",
+      "stock": 25,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "name": "Product 6",
+      "description": "Description for product 6",
+      "price": "14.5",
+      "stock": 30,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "name": "Product 7",
+      "description": "Description for product 7",
+      "price": "15.25",
+      "stock": 35,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "name": "Product 8",
+      "description": "Description for product 8",
+      "price": "16.0",
+      "stock": 40,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "name": "Product 9",
+      "description": "Description for product 9",
+      "price": "16.75",
+      "stock": 45,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "name": "Product 10",
+      "description": "Description for product 10",
+      "price": "17.5",
+      "stock": 50,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "name": "Product 11",
+      "description": "Description for product 11",
+      "price": "18.25",
+      "stock": 55,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "name": "Product 12",
+      "description": "Description for product 12",
+      "price": "19.0",
+      "stock": 60,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "name": "Product 13",
+      "description": "Description for product 13",
+      "price": "19.75",
+      "stock": 65,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+      "name": "Product 14",
+      "description": "Description for product 14",
+      "price": "20.5",
+      "stock": 70,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+      "name": "Product 15",
+      "description": "Description for product 15",
+      "price": "21.25",
+      "stock": 75,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+      "name": "Product 16",
+      "description": "Description for product 16",
+      "price": "22.0",
+      "stock": 80,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+      "name": "Product 17",
+      "description": "Description for product 17",
+      "price": "22.75",
+      "stock": 85,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+      "name": "Product 18",
+      "description": "Description for product 18",
+      "price": "23.5",
+      "stock": 90,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+      "name": "Product 19",
+      "description": "Description for product 19",
+      "price": "24.25",
+      "stock": 95,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+      "name": "Product 20",
+      "description": "Description for product 20",
+      "price": "25.0",
+      "stock": 100,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+      "name": "Product 21",
+      "description": "Description for product 21",
+      "price": "25.75",
+      "stock": 105,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+      "name": "Product 22",
+      "description": "Description for product 22",
+      "price": "26.5",
+      "stock": 110,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+      "name": "Product 23",
+      "description": "Description for product 23",
+      "price": "27.25",
+      "stock": 115,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+      "name": "Product 24",
+      "description": "Description for product 24",
+      "price": "28.0",
+      "stock": 120,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+      "name": "Product 25",
+      "description": "Description for product 25",
+      "price": "28.75",
+      "stock": 125,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+      "name": "Product 26",
+      "description": "Description for product 26",
+      "price": "29.5",
+      "stock": 130,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+      "name": "Product 27",
+      "description": "Description for product 27",
+      "price": "30.25",
+      "stock": 135,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+      "name": "Product 28",
+      "description": "Description for product 28",
+      "price": "31.0",
+      "stock": 140,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+      "name": "Product 29",
+      "description": "Description for product 29",
+      "price": "31.75",
+      "stock": 145,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+      "name": "Product 30",
+      "description": "Description for product 30",
+      "price": "32.5",
+      "stock": 150,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+      "name": "Product 31",
+      "description": "Description for product 31",
+      "price": "33.25",
+      "stock": 155,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+      "name": "Product 32",
+      "description": "Description for product 32",
+      "price": "34.0",
+      "stock": 160,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+      "name": "Product 33",
+      "description": "Description for product 33",
+      "price": "34.75",
+      "stock": 165,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+      "name": "Product 34",
+      "description": "Description for product 34",
+      "price": "35.5",
+      "stock": 170,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+      "name": "Product 35",
+      "description": "Description for product 35",
+      "price": "36.25",
+      "stock": 175,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+      "name": "Product 36",
+      "description": "Description for product 36",
+      "price": "37.0",
+      "stock": 180,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+      "name": "Product 37",
+      "description": "Description for product 37",
+      "price": "37.75",
+      "stock": 185,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+      "name": "Product 38",
+      "description": "Description for product 38",
+      "price": "38.5",
+      "stock": 190,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 39,
+    "fields": {
+      "name": "Product 39",
+      "description": "Description for product 39",
+      "price": "39.25",
+      "stock": 195,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 40,
+    "fields": {
+      "name": "Product 40",
+      "description": "Description for product 40",
+      "price": "40.0",
+      "stock": 200,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 41,
+    "fields": {
+      "name": "Product 41",
+      "description": "Description for product 41",
+      "price": "40.75",
+      "stock": 205,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 42,
+    "fields": {
+      "name": "Product 42",
+      "description": "Description for product 42",
+      "price": "41.5",
+      "stock": 210,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 43,
+    "fields": {
+      "name": "Product 43",
+      "description": "Description for product 43",
+      "price": "42.25",
+      "stock": 215,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 44,
+    "fields": {
+      "name": "Product 44",
+      "description": "Description for product 44",
+      "price": "43.0",
+      "stock": 220,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 45,
+    "fields": {
+      "name": "Product 45",
+      "description": "Description for product 45",
+      "price": "43.75",
+      "stock": 225,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 46,
+    "fields": {
+      "name": "Product 46",
+      "description": "Description for product 46",
+      "price": "44.5",
+      "stock": 230,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 47,
+    "fields": {
+      "name": "Product 47",
+      "description": "Description for product 47",
+      "price": "45.25",
+      "stock": 235,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 48,
+    "fields": {
+      "name": "Product 48",
+      "description": "Description for product 48",
+      "price": "46.0",
+      "stock": 240,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 49,
+    "fields": {
+      "name": "Product 49",
+      "description": "Description for product 49",
+      "price": "46.75",
+      "stock": 245,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 50,
+    "fields": {
+      "name": "Product 50",
+      "description": "Description for product 50",
+      "price": "47.5",
+      "stock": 250,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 51,
+    "fields": {
+      "name": "Product 51",
+      "description": "Description for product 51",
+      "price": "48.25",
+      "stock": 255,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 52,
+    "fields": {
+      "name": "Product 52",
+      "description": "Description for product 52",
+      "price": "49.0",
+      "stock": 260,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 53,
+    "fields": {
+      "name": "Product 53",
+      "description": "Description for product 53",
+      "price": "49.75",
+      "stock": 265,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 54,
+    "fields": {
+      "name": "Product 54",
+      "description": "Description for product 54",
+      "price": "50.5",
+      "stock": 270,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 55,
+    "fields": {
+      "name": "Product 55",
+      "description": "Description for product 55",
+      "price": "51.25",
+      "stock": 275,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 56,
+    "fields": {
+      "name": "Product 56",
+      "description": "Description for product 56",
+      "price": "52.0",
+      "stock": 280,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 57,
+    "fields": {
+      "name": "Product 57",
+      "description": "Description for product 57",
+      "price": "52.75",
+      "stock": 285,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 58,
+    "fields": {
+      "name": "Product 58",
+      "description": "Description for product 58",
+      "price": "53.5",
+      "stock": 290,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 59,
+    "fields": {
+      "name": "Product 59",
+      "description": "Description for product 59",
+      "price": "54.25",
+      "stock": 295,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 60,
+    "fields": {
+      "name": "Product 60",
+      "description": "Description for product 60",
+      "price": "55.0",
+      "stock": 300,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 61,
+    "fields": {
+      "name": "Product 61",
+      "description": "Description for product 61",
+      "price": "55.75",
+      "stock": 305,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 62,
+    "fields": {
+      "name": "Product 62",
+      "description": "Description for product 62",
+      "price": "56.5",
+      "stock": 310,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 63,
+    "fields": {
+      "name": "Product 63",
+      "description": "Description for product 63",
+      "price": "57.25",
+      "stock": 315,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 64,
+    "fields": {
+      "name": "Product 64",
+      "description": "Description for product 64",
+      "price": "58.0",
+      "stock": 320,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 65,
+    "fields": {
+      "name": "Product 65",
+      "description": "Description for product 65",
+      "price": "58.75",
+      "stock": 325,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 66,
+    "fields": {
+      "name": "Product 66",
+      "description": "Description for product 66",
+      "price": "59.5",
+      "stock": 330,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 67,
+    "fields": {
+      "name": "Product 67",
+      "description": "Description for product 67",
+      "price": "60.25",
+      "stock": 335,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 68,
+    "fields": {
+      "name": "Product 68",
+      "description": "Description for product 68",
+      "price": "61.0",
+      "stock": 340,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 69,
+    "fields": {
+      "name": "Product 69",
+      "description": "Description for product 69",
+      "price": "61.75",
+      "stock": 345,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 70,
+    "fields": {
+      "name": "Product 70",
+      "description": "Description for product 70",
+      "price": "62.5",
+      "stock": 350,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 71,
+    "fields": {
+      "name": "Product 71",
+      "description": "Description for product 71",
+      "price": "63.25",
+      "stock": 355,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 72,
+    "fields": {
+      "name": "Product 72",
+      "description": "Description for product 72",
+      "price": "64.0",
+      "stock": 360,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 73,
+    "fields": {
+      "name": "Product 73",
+      "description": "Description for product 73",
+      "price": "64.75",
+      "stock": 365,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 74,
+    "fields": {
+      "name": "Product 74",
+      "description": "Description for product 74",
+      "price": "65.5",
+      "stock": 370,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 75,
+    "fields": {
+      "name": "Product 75",
+      "description": "Description for product 75",
+      "price": "66.25",
+      "stock": 375,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 76,
+    "fields": {
+      "name": "Product 76",
+      "description": "Description for product 76",
+      "price": "67.0",
+      "stock": 380,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 77,
+    "fields": {
+      "name": "Product 77",
+      "description": "Description for product 77",
+      "price": "67.75",
+      "stock": 385,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 78,
+    "fields": {
+      "name": "Product 78",
+      "description": "Description for product 78",
+      "price": "68.5",
+      "stock": 390,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 79,
+    "fields": {
+      "name": "Product 79",
+      "description": "Description for product 79",
+      "price": "69.25",
+      "stock": 395,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 80,
+    "fields": {
+      "name": "Product 80",
+      "description": "Description for product 80",
+      "price": "70.0",
+      "stock": 400,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 81,
+    "fields": {
+      "name": "Product 81",
+      "description": "Description for product 81",
+      "price": "70.75",
+      "stock": 405,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 82,
+    "fields": {
+      "name": "Product 82",
+      "description": "Description for product 82",
+      "price": "71.5",
+      "stock": 410,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 83,
+    "fields": {
+      "name": "Product 83",
+      "description": "Description for product 83",
+      "price": "72.25",
+      "stock": 415,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 84,
+    "fields": {
+      "name": "Product 84",
+      "description": "Description for product 84",
+      "price": "73.0",
+      "stock": 420,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 85,
+    "fields": {
+      "name": "Product 85",
+      "description": "Description for product 85",
+      "price": "73.75",
+      "stock": 425,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 86,
+    "fields": {
+      "name": "Product 86",
+      "description": "Description for product 86",
+      "price": "74.5",
+      "stock": 430,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 87,
+    "fields": {
+      "name": "Product 87",
+      "description": "Description for product 87",
+      "price": "75.25",
+      "stock": 435,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 88,
+    "fields": {
+      "name": "Product 88",
+      "description": "Description for product 88",
+      "price": "76.0",
+      "stock": 440,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 89,
+    "fields": {
+      "name": "Product 89",
+      "description": "Description for product 89",
+      "price": "76.75",
+      "stock": 445,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 90,
+    "fields": {
+      "name": "Product 90",
+      "description": "Description for product 90",
+      "price": "77.5",
+      "stock": 450,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 91,
+    "fields": {
+      "name": "Product 91",
+      "description": "Description for product 91",
+      "price": "78.25",
+      "stock": 455,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 92,
+    "fields": {
+      "name": "Product 92",
+      "description": "Description for product 92",
+      "price": "79.0",
+      "stock": 460,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 93,
+    "fields": {
+      "name": "Product 93",
+      "description": "Description for product 93",
+      "price": "79.75",
+      "stock": 465,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 94,
+    "fields": {
+      "name": "Product 94",
+      "description": "Description for product 94",
+      "price": "80.5",
+      "stock": 470,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 95,
+    "fields": {
+      "name": "Product 95",
+      "description": "Description for product 95",
+      "price": "81.25",
+      "stock": 475,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 96,
+    "fields": {
+      "name": "Product 96",
+      "description": "Description for product 96",
+      "price": "82.0",
+      "stock": 480,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 97,
+    "fields": {
+      "name": "Product 97",
+      "description": "Description for product 97",
+      "price": "82.75",
+      "stock": 485,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 98,
+    "fields": {
+      "name": "Product 98",
+      "description": "Description for product 98",
+      "price": "83.5",
+      "stock": 490,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 99,
+    "fields": {
+      "name": "Product 99",
+      "description": "Description for product 99",
+      "price": "84.25",
+      "stock": 495,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 100,
+    "fields": {
+      "name": "Product 100",
+      "description": "Description for product 100",
+      "price": "85.0",
+      "stock": 500,
+      "is_active": true,
+      "created_at": "2025-07-03T12:58:31.306162Z",
+      "updated_at": "2025-07-03T12:58:31.306162Z"
+    }
+  }
+]
