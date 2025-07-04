@@ -12,8 +12,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Archive project files
-      run: tar --warning=no-file-changed -czf project.tar.gz .
+    - name: Create tarball safely
+      run: |
+        mkdir temp_project
+        shopt -s dotglob
+        cp -r * temp_project/
+        tar -czf project.tar.gz -C temp_project .
 
     - name: Upload to EC2
       uses: appleboy/scp-action@v0.1.4
