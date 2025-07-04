@@ -12,11 +12,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Create tarball safely
+    - name: Create clean project tarball
       run: |
         mkdir temp_project
-        shopt -s dotglob
-        cp -r * temp_project/
+        rsync -av --progress ./ temp_project/ --exclude temp_project --exclude .git
         tar -czf project.tar.gz -C temp_project .
 
     - name: Upload to EC2
