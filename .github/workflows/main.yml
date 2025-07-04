@@ -12,13 +12,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Create clean project tarball
+    - name: Archive code (exclude .git)
       run: |
         mkdir temp_project
         rsync -av --progress ./ temp_project/ --exclude temp_project --exclude .git
         tar -czf project.tar.gz -C temp_project .
 
-    - name: Upload to EC2
+    - name: Upload archive to EC2
       uses: appleboy/scp-action@v0.1.4
       with:
         host: ${{ secrets.EC2_HOST }}
@@ -27,7 +27,7 @@ jobs:
         source: "project.tar.gz"
         target: "~/"
 
-    - name: Deploy on EC2
+    - name: Deploy using SSH
       uses: appleboy/ssh-action@v1.0.3
       with:
         host: ${{ secrets.EC2_HOST }}
