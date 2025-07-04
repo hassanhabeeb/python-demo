@@ -1,4 +1,4 @@
-name: Build & Deploy to EC2
+name: Build & Deploy to EC2 via Docker Compose
 
 on:
   push:
@@ -6,7 +6,6 @@ on:
 
 jobs:
   deploy:
-    name: Deploy Django App via Docker Compose
     runs-on: ubuntu-latest
 
     steps:
@@ -19,18 +18,25 @@ jobs:
         echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
 
-    - name: Add SSH Host Key
+    - name: Add Host Key
       run: |
         ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
-    - name: Sync project to EC2
+    - name: Sync Project to EC2
       run: |
         rsync -az --delete -e "ssh -i ~/.ssh/id_rsa" ./ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:${{ secrets.DEPLOY_PATH }}
 
-    - name: Deploy with Docker Compose
+    - name: Run Docker Compose on EC2
       run: |
-        ssh -i ~/.ssh/id_rsa ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << EOF
+        ssh -i ~/.ssh/id_rsa ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
           cd ${{ secrets.DEPLOY_PATH }}
+
+          if ! docker ps > /dev/null 2>&1; then
+            echo "Docker not running, starting Docker..."
+            sudo systemctl start docker
+          fi
+
+          echo "Running docker-compose up..."
           docker compose down || true
           docker compose up --build -d
         EOF
