@@ -333,54 +333,34 @@ SIMPLE_JWT = {
 APPEND_SLASH = False
 
 
-from pathlib import Path
 import os
-from ssm_loader import get_ssm_param
+from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Security
-SECRET_KEY = get_ssm_param("/python-demo/SECRET_KEY")
-DEBUG = get_ssm_param("/python-demo/DEBUG", default="False") == "True"
-ENVIRONMENT = get_ssm_param("/python-demo/ENVIRONMENT", default="local")
+SECRET_KEY = os.environ["SECRET_KEY"]
+DEBUG = os.environ.get("DEBUG", "False") == "True"
+ENVIRONMENT = os.environ.get("ENVIRONMENT", "local")
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "127.0.0.1").split(',')
 
-ALLOWED_HOSTS = get_ssm_param("/python-demo/ALLOWED_HOSTS", default="127.0.0.1").split(',')
+CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS", "").split(",")
+CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS", "").split(",")
+CORS_ORIGIN_WHITELIST = os.environ.get("CORS_ORIGIN_WHITELIST", "").split(",")
 
-# CSRF & CORS
-CSRF_TRUSTED_ORIGINS = get_ssm_param(
-    "/python-demo/CSRF_TRUSTED_ORIGINS", default="http://localhost:3000"
-).split(',')
-
-CORS_ALLOWED_ORIGINS = get_ssm_param(
-    "/python-demo/CORS_ALLOWED_ORIGINS", default="http://localhost:3000"
-).split(',')
-
-CORS_ORIGIN_WHITELIST = get_ssm_param(
-    "/python-demo/CORS_ORIGIN_WHITELIST", default="http://localhost:3000"
-).split(',')
-
-# Swagger (optional)
-SWAGGER_DEFAULT_API_URL = get_ssm_param("/python-demo/SWAGGER_DEFAULT_API_URL", default="http://127.0.0.1:8000/")
-
-# Database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': get_ssm_param("/python-demo/DB_NAME"),
-        'USER': get_ssm_param("/python-demo/DATABASE_USER"),
-        'PASSWORD': get_ssm_param("/python-demo/DATABASE_PASSWORD"),
-        'HOST': get_ssm_param("/python-demo/DATABASE_HOST"),
-        'PORT': get_ssm_param("/python-demo/DATABASE_PORT"),
-        'CONN_MAX_AGE': int(get_ssm_param("/python-demo/DB_CONN_MAX_AGE", default="60")),
-        'OPTIONS': {
-            'sslmode': get_ssm_param("/python-demo/DB_SSLMODE", default="prefer")
-        },
+        'NAME': os.environ['DB_NAME'],
+        'USER': os.environ['DATABASE_USER'],
+        'PASSWORD': os.environ['DATABASE_PASSWORD'],
+        'HOST': os.environ['DATABASE_HOST'],
+        'PORT': os.environ['DATABASE_PORT'],
     }
 }
 
-# Static files setup (optional)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 
 
