@@ -22,14 +22,14 @@ services:
     environment:
       AWS_DEFAULT_REGION: ap-south-1   # Region for SSM access
       AWS_SSM_PATH_PREFIX: /python-demo/   # Not used in export_env.sh but here for future use
-    network_mode: "host"  # Needed for EC2 IAM Role metadata access
+ # Needed for EC2 IAM Role metadata access
 
   db:
     image: postgres:15
     container_name: postgres-db
     restart: always
     environment:
-      POSTGRES_DB: machine_test
+      POSTGRES_DB: machine_test_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: root
     volumes:
