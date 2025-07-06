@@ -7,12 +7,12 @@ services:
       dockerfile: dockerfile
     container_name: django-app
     command: >
-     bash -c "
-    source <(bash export_env.sh) &&
-    python manage.py migrate &&
-    python manage.py collectstatic --noinput &&
-    python manage.py runserver 0.0.0.0:8000
-  "
+      bash -c "
+        source <(bash export_env.sh) &&
+        python manage.py migrate &&
+        python manage.py collectstatic --noinput &&
+        python manage.py runserver 0.0.0.0:8000
+      "
     volumes:
       - .:/app
     ports:
@@ -20,10 +20,10 @@ services:
     depends_on:
       - db
     environment:
-      AWS_DEFAULT_REGION: ap-south-1  # Region for SSM access
-      AWS_SSM_PATH_PREFIX: /python-demo/  # Custom prefix to fetch keys
-    network_mode: "host"  # Ensures access to EC2 instance metadata (IAM Role)
-  
+      AWS_DEFAULT_REGION: ap-south-1   # Region for SSM access
+      AWS_SSM_PATH_PREFIX: /python-demo/   # Not used in export_env.sh but here for future use
+    network_mode: "host"  # Needed for EC2 IAM Role metadata access
+
   db:
     image: postgres:15
     container_name: postgres-db
