@@ -146,7 +146,7 @@ WSGI_APPLICATION = 'machine_test.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': get_env_var('DATABASE_NAME', required=True),
+        'NAME': get_env_var('DB_NAME', required=True),
         'USER': get_env_var('DATABASE_USER', required=True),
         'PASSWORD': get_env_var('DATABASE_PASSWORD', required=True),
         'HOST': get_env_var('DATABASE_HOST', 'localhost'),
