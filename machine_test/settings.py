@@ -333,30 +333,54 @@ SIMPLE_JWT = {
 APPEND_SLASH = False
 
 
+from pathlib import Path
+import os
+from ssm_loader import get_ssm_param
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-#from ssm_loader import get_ssm_param
+# Security
+SECRET_KEY = get_ssm_param("/python-demo/SECRET_KEY")
+DEBUG = get_ssm_param("/python-demo/DEBUG", default="False") == "True"
+ENVIRONMENT = get_ssm_param("/python-demo/ENVIRONMENT", default="local")
 
+ALLOWED_HOSTS = get_ssm_param("/python-demo/ALLOWED_HOSTS", default="127.0.0.1").split(',')
 
-#SECRET_KEY = get_ssm_param("/machine-test/SECRET_KEY")
-#DEBUG = get_ssm_param("/machine-test/DEBUG", default="False") == "True"
+# CSRF & CORS
+CSRF_TRUSTED_ORIGINS = get_ssm_param(
+    "/python-demo/CSRF_TRUSTED_ORIGINS", default="http://localhost:3000"
+).split(',')
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': get_ssm_param('/machine-test/DATABASE_NAME'),
-#        'USER': get_ssm_param('/machine-test/DATABASE_USER'),
-#        'PASSWORD': get_ssm_param('/machine-test/DATABASE_PASSWORD'),
-#        'HOST': get_ssm_param('/machine-test/DATABASE_HOST'),
-#        'PORT': get_ssm_param('/machine-test/DATABASE_PORT'),
-#    }
-#}
+CORS_ALLOWED_ORIGINS = get_ssm_param(
+    "/python-demo/CORS_ALLOWED_ORIGINS", default="http://localhost:3000"
+).split(',')
 
-#ALLOWED_HOSTS = get_ssm_param('/machine-test/ALLOWED_HOSTS', default='127.0.0.1').split(',')
-#CSRF_TRUSTED_ORIGINS = get_ssm_param('/machine-test/CSRF_TRUSTED_ORIGINS', default='').split(',')
-#CORS_ALLOWED_ORIGINS = get_ssm_param('/machine-test/CORS_ALLOWED_ORIGINS', default='').split(',')
-#SWAGGER_DEFAULT_API_URL = get_ssm_param('/machine-test/SWAGGER_DEFAULT_API_URL')
-#SECURE_CROSS_ORIGIN_OPENER_POLICY = None  # or simply don't set it
+CORS_ORIGIN_WHITELIST = get_ssm_param(
+    "/python-demo/CORS_ORIGIN_WHITELIST", default="http://localhost:3000"
+).split(',')
+
+# Swagger (optional)
+SWAGGER_DEFAULT_API_URL = get_ssm_param("/python-demo/SWAGGER_DEFAULT_API_URL", default="http://127.0.0.1:8000/")
+
+# Database
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': get_ssm_param("/python-demo/DATABASE_NAME"),
+        'USER': get_ssm_param("/python-demo/DATABASE_USER"),
+        'PASSWORD': get_ssm_param("/python-demo/DATABASE_PASSWORD"),
+        'HOST': get_ssm_param("/python-demo/DATABASE_HOST"),
+        'PORT': get_ssm_param("/python-demo/DATABASE_PORT"),
+        'CONN_MAX_AGE': int(get_ssm_param("/python-demo/DB_CONN_MAX_AGE", default="60")),
+        'OPTIONS': {
+            'sslmode': get_ssm_param("/python-demo/DB_SSLMODE", default="prefer")
+        },
+    }
+}
+
+# Static files setup (optional)
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 
