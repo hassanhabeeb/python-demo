@@ -8,10 +8,10 @@ services:
     container_name: django-app
     command: >
       bash -c "
-      python ssm_loader.py &&
-      python manage.py migrate &&
-      python manage.py collectstatic --noinput &&
-      python manage.py runserver 0.0.0.0:8000
+        python ssm_loader.py &&
+        python manage.py migrate &&
+        python manage.py collectstatic --noinput &&
+        python manage.py runserver 0.0.0.0:8000
       "
     volumes:
       - .:/app
@@ -20,9 +20,10 @@ services:
     depends_on:
       - db
     environment:
-      AWS_DEFAULT_REGION: ap-south-1
-      AWS_SSM_PATH_PREFIX: /python-demo/
-    network_mode: "host"  
+      AWS_DEFAULT_REGION: ap-south-1  # Region for SSM access
+      AWS_SSM_PATH_PREFIX: /python-demo/  # Custom prefix to fetch keys
+    network_mode: "host"  # Ensures access to EC2 instance metadata (IAM Role)
+  
   db:
     image: postgres:15
     container_name: postgres-db
