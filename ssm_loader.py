@@ -1,17 +1,26 @@
 # ssm_loader.py
-import boto3
 import os
+import boto3
 
 def fetch_all_ssm_parameters(prefix="/python-demo/"):
-    region = os.getenv("AWS_DEFAULT_REGION", "ap-south-1")
-    ssm = boto3.client("ssm", region_name=region)
+    ssm = boto3.client("ssm", region_name=os.getenv("AWS_REGION", "ap-south-1"))
 
-    paginator = ssm.get_paginator('get_parameters_by_path')
-    for page in paginator.paginate(Path=prefix, Recursive=True, WithDecryption=True):
-        for param in page['Parameters']:
-            key = param['Name'].split('/')[-1]
-            value = param['Value']
-            print(f'export {key}="{value}"')
+    next_token = None
+    while True:
+        kwargs = {
+            "Path": prefix,
+            "Recursive": True,
+            "WithDecryption": True
+        }
+        if next_token:
+            kwargs["NextToken"] = next_token
 
-if __name__ == "__main__":
-    fetch_all_ssm_parameters()
+        response = ssm.get_parameters_by_path(**kwargs)
+
+        for param in response.get("Parameters", []):
+            key = param["Name"].replace(prefix, "").upper()
+            os.environ[key] = param["Value"]
+
+        next_token = response.get("NextToken")
+        if not next_token:
+            break
