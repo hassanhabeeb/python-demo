@@ -366,7 +366,7 @@ SWAGGER_DEFAULT_API_URL = get_ssm_param("/python-demo/SWAGGER_DEFAULT_API_URL", 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': get_ssm_param("/python-demo/DATABASE_NAME"),
+        'NAME': get_ssm_param("/python-demo/DB_NAME"),
         'USER': get_ssm_param("/python-demo/DATABASE_USER"),
         'PASSWORD': get_ssm_param("/python-demo/DATABASE_PASSWORD"),
         'HOST': get_ssm_param("/python-demo/DATABASE_HOST"),
