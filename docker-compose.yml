@@ -8,7 +8,7 @@ services:
     container_name: django-app
     command: >
       bash -c "
-        source <(bash export_env.sh) &&
+        python3 ssm_loader.py &&
         python manage.py migrate &&
         python manage.py collectstatic --noinput &&
         python manage.py runserver 0.0.0.0:8000
