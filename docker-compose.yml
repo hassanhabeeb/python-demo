@@ -22,7 +22,7 @@ services:
     environment:
       AWS_DEFAULT_REGION: ap-south-1
       AWS_SSM_PATH_PREFIX: /python-demo/
-
+    network_mode: "host"  
   db:
     image: postgres:15
     container_name: postgres-db
