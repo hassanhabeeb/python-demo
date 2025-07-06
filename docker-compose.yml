@@ -7,12 +7,12 @@ services:
       dockerfile: dockerfile
     container_name: django-app
     command: >
-      bash -c "
-        python ssm_loader.py &&
-        python manage.py migrate &&
-        python manage.py collectstatic --noinput &&
-        python manage.py runserver 0.0.0.0:8000
-      "
+     bash -c "
+    source <(bash export_env.sh) &&
+    python manage.py migrate &&
+    python manage.py collectstatic --noinput &&
+    python manage.py runserver 0.0.0.0:8000
+  "
     volumes:
       - .:/app
     ports:
